@@ -1,0 +1,22 @@
+{
+  "name": "graphql-prisma",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "scripts": {
+    "start": "nodemon prisma.js --ext js,graphql --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get-schema": "graphql get-schema -p prisma"
+  },
+  "dependencies": {
+    "graphql-cli": "^2.16.4",
+    "prisma-binding": "^2.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
